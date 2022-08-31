@@ -16,6 +16,8 @@ export const calculatorReducer = (state = initialState, action) =>{
                 ...state,
                 ...payload,
                 number:state.number.concat(action.payload)
+           
+                
             }
         case LOAD_ANS:
             try{
