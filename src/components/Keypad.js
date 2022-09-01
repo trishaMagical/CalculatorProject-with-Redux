@@ -4,6 +4,7 @@ import {loadAns, loadBackspace, loadButtons, loadClear} from '../redux/calculato
 //import {CALCULATOR_KEY} from '../redux/calculatorRedux/calculator.reducer'
 import { connect } from "react-redux";
 import Key from"./Key";
+// import "./keypad.css"
 
 
 const Buttons = () => {

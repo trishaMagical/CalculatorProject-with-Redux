@@ -1,0 +1,8 @@
+
+.inputBox{
+    height: 50px;
+    width: 89%;
+    margin-top: 10px;
+    border: 3px solid red;
+    color: black;
+}

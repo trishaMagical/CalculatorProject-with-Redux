@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CalculatorApp.css";
+// import "./CalculatorApp.css";
 
 
 import {useDispatch,useSelector} from 'react-redux'
@@ -7,6 +7,7 @@ import {useDispatch,useSelector} from 'react-redux'
 import {CALCULATOR_KEY} from '../redux/calculatorRedux/calculator.reducer'
 
 import { connect } from "react-redux";
+import "./Display.css";
 
 const Display = () => {
    const dispatch = useDispatch()
@@ -17,7 +18,7 @@ const Display = () => {
   return (
     <React.Fragment>
       {/* <pre>{JSON.stringify(viewCalculator)}</pre> */}
-      <div className="">
+      <div className="displayContainer">
                 <input 
                   type="text"
                   placeholder='0'
