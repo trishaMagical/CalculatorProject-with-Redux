@@ -5,7 +5,7 @@ import {loadAns, loadBackspace, loadButtons, loadClear} from '../redux/calculato
 //import {CALCULATOR_KEY} from '../redux/calculatorRedux/calculator.reducer'
 const Key = () => {
   const dispatch = useDispatch()
-  const [numbers, setNumbers] = useState([1,2,3,4,5,6,7,8,9,0 ,'+','-','*','/','.','%'])
+  const [numbers, setNumbers] = useState([1,2,3,4,5,6,7,8,9,0,".","=" ])
   
   return (
     <div style={{width:"301px", }}>
@@ -29,19 +29,8 @@ const Key = () => {
       }
       
       </div>
-      <div className='row' style={{marginLeft:"2px", fontWeight:"bold" , fontFamily:"initial", color:"red" , borderRadius:"3px"}}>
-      <div className='col-4 p-2 border ' onClick={()=>dispatch(loadClear())}>AC</div>
-      <div className='col-4 p-2 border ' onClick={()=>dispatch(loadBackspace())}>C</div>
-      <div className='col-4 p-2 border ' onClick={()=>dispatch(loadAns())}>=</div> 
-      </div>
-      
-    
-      
-    
-     
-       
-      
-    </div>
+
+ </div>
   )
 }
 
